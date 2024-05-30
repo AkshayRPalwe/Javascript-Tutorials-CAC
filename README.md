@@ -5,4 +5,4 @@
 05: Data Types
 06: Conversion Operstions
 07: String to Number Operations
-
+08: comparison operators
