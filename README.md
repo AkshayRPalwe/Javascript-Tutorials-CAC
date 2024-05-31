@@ -7,3 +7,4 @@
 07: String to Number Operations
 08: comparison operators
 09: Data Types Summary
+10: Stack and Heap memories
