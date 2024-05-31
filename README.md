@@ -13,3 +13,4 @@
 13: Date And Time
 14: Arrays
 16: Objects
+19: Functions
