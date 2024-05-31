@@ -9,3 +9,4 @@
 09: Data Types Summary
 10: Stack and Heap memories
 11: Strings
+12: Number and Maths
