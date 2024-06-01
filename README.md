@@ -14,3 +14,5 @@
 14: Arrays
 16: Objects
 19: Functions
+21: Scope: Global and Local
+22: Scope level and mini hoisting
