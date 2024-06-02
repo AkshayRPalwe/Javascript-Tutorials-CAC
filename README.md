@@ -16,3 +16,4 @@
 19: Functions
 21: Scope: Global and Local
 22: Scope level and mini hoisting
+23: This keyword and Arrow Function
