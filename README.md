@@ -18,3 +18,4 @@
 22: Scope level and mini hoisting
 23: This keyword and Arrow Function
 24: IIFE - Immediately Invoked Function Expressions
+25: How does javascript execute code + call stack

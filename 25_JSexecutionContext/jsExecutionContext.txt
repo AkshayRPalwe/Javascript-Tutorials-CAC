@@ -1,0 +1,58 @@
+***** Javascript Execution Context *****
+
+JS is single threaded programming language
+
+Execution Contexts:
+
+Global Execution Context
+Functional Execution Context
+Eval Execution Context
+
+++++++++++ How JS code executes? ++++++++++
+
+Phase 1: Memory creation phase
+Phase 2. Execution phase
+---------------------------------
+let val1 = 10;
+let val2 = 5;
+
+function add(num1, num2){
+    let total = num1 + num2;
+    return total;
+}
+
+let res1 = add(val1, val2);
+let res2 = add(10, 2);
+---------------------------------
+
+1. Global Execution --> Code gets allocated in 'this' keyword. <-------------------------                          
+                                                                                        |
+2. Memory phase =>                                                                      |
+                val1 --> undefined                                                      |
+                val2 --> undefined                                                      |
+                add --> defination                                                      |
+                res1 --> undefined                                                      |
+                res2 --> undefined                                                      |
+                                                                                        |
+3. Execution phase =>                                                                   |
+                val1 <-- 10                                                             |
+                val2 <-- 5                                                              |
+                add -->                                                                 |
+                res1 = 15 --> once execution finishes __                                |
+                res2 = 15 --> again executes below piece once execution finishes __     |
+                                                        |                               |
+                                                        |                               |
+                        Creates new executional context which includes -->              |
+                                new variable environment + Execution thread             |
+                                               --> Deletes once its execution finishes  |     
+                                                                                        |
+                                Memory Phase =>                                         |    
+                                            val1 --> undefined                          |
+                                            val2 --> undefined                          |    
+                                            total --> undefined                         |
+                                                                                        |   
+                                Execution Context(Processing) =>                        |   
+                                            num1 <-- 10                                 |   
+                                            num2 <-- 5                                  |
+                                            total <-- 15   ------------------------------
+

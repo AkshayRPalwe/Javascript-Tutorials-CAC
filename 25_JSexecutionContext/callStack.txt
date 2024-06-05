@@ -1,0 +1,21 @@
+LIFO --> List In First Out
+
+function one() {
+    console.log("one")
+    two();
+}
+
+function two() {
+    console.log("two")
+    three();
+}
+
+function three() {
+    console.log("three")
+}
+
+one();
+two();
+three();
+
+Add above code in Browser --> in sources tab --> check callstack by adding breakpoints for better understanding.
