@@ -24,3 +24,4 @@ Basic JS End
 
 26: Control flow in JavaScript --> If Else, SwithcCase, Truthy Flasy, Nullish Coalescing Operator (??), Ternary Operator
 27: For Loop, Break and Continue
+28: While and DoWhile Loops
