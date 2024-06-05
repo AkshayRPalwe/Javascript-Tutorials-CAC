@@ -19,3 +19,7 @@
 23: This keyword and Arrow Function
 24: IIFE - Immediately Invoked Function Expressions
 25: How does javascript execute code + call stack
+
+Basic JS End
+
+26: Control flow in JavaScript --> If Else, SwithcCase, Truthy Flasy, Nullish Coalescing Operator (??), Ternary Operator
