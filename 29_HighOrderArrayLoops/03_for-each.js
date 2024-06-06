@@ -32,6 +32,14 @@ const myCoding = [
   },
 ];
 
-myCoding.forEach((item) => {
-  console.log(item.languageFileName);
-});
+// myCoding.forEach((item) => {
+//   console.log(item.languageFileName);
+// });
+
+// const programming = ["js", "rb", "py", "java", "cpp"];
+
+// const values = programming.forEach((item) => {
+//   // console.log(item);
+//   return item;
+// });
+// console.log(values); // undefined: For-each does not return values

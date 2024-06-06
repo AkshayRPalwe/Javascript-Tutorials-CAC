@@ -26,3 +26,4 @@ Basic JS End
 27: For Loop, Break and Continue
 28: While and DoWhile Loops
 29: High Order Array Loops: for-of, for-in, for-each
+30: Filter, Map and Reduce Finction
