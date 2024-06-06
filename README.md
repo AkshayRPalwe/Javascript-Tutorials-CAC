@@ -30,3 +30,4 @@ Basic JS End
 31: DOM Introduction
 32: DOM Selectors, NodeList and HTMLCollection
 33: How to create new element in DOM
+34: Edit and Remove elements from DOM
