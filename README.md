@@ -28,3 +28,4 @@ Basic JS End
 29: High Order Array Loops: for-of, for-in, for-each
 30: Filter, Map and Reduce Finction
 31: DOM Introduction
+32: DOM Selectors, NodeList and HTMLCollection
