@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: black; color: white; font-size: 30px">
+    <ul id="images">
+      <li id="owl">OWL</li>
+      <!-- <li id="prayer" onclick="alert('Praying')">Prayer</li> -->
+      <li id="cow">Cow</li>
+      <li id="morning">Morning</li>
+      <li><a id="google" href="https://google.com">Google</a></li>
+    </ul>
+  </body>
+  <script>
+    document.getElementById("morning").onclick = function () {
+      // alert("Good Morning");
+    };
+
+    // Best approach
+    document.getElementById("owl").addEventListener(
+      "click",
+      function () {
+        // alert("Owl is flying");
+      },
+      false
+    ); // false is default
+
+    // attachEvent -- we dont use it anymore
+    // jQuery - onEventListner
+
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (event) {
+        // console.log(event);
+      },
+      false
+    ); // false is default
+
+    // Read
+    // type - keyboard mouse events, Timestamps, defaultprevented --> prevent default behaviour  of any Tag
+    // target, toElement, srcElement
+    // clientX, clientY, screenX, screenY
+    // altKay, ctrlKey, shiftKey, keyCode
+
+    //
+
+    // Event Propogation
+    // Event Capturing
+
+    // // Event bubbling
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Clicked inside UL");
+    //   },
+    //   false
+    // ); // false is default --> Event bubbling -->
+
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Owl Clicked");
+    //   },
+    //   false
+    // ); // false is default --> Event bubbling
+    // Owl Clicked
+    // Clicked inside UL
+    // Event bubbling Bubbling up --> means scripts executes from inside to outside. img then li then ul
+
+    //
+
+    // // Event capturing --> opposite of event bubbling
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Clicked inside UL");
+    //   },
+    //   true
+    // ); // true --> Event Capturing
+
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Owl Clicked");
+    //   },
+    //   true
+    // );
+    // // Clicked inside UL
+    // // Owl Clicked
+
+    //
+
+    //
+
+    // // How to stop propogation
+    // document.getElementById("images").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Clicked inside UL");
+    //   },
+    //   false
+    // );
+
+    // document.getElementById("owl").addEventListener(
+    //   "click",
+    //   function (event) {
+    //     console.log("Owl Clicked");
+    //     event.stopPropagation(); --> Important
+    //   },
+    //   false
+    // );
+
+    //
+
+    //
+
+    // // Prevent Default --> We can make sure, vye clicking on link ith should not go to google.com
+
+    document.getElementById("google").addEventListener(
+      "click",
+      function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("Google Clicked");
+      },
+      false
+    );
+
+    document.querySelector("#images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.parentNode);
+        // const removeLi = e.target;
+        // removeLi.remove();
+
+        let removeParent = e.target.parentNode;
+        removeParent.remove();
+      },
+      false // For event propogation
+    );
+  </script>
+</html>
