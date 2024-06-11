@@ -67,3 +67,5 @@
 ###### 38: Two Projects with Async JS
 
 ###### 39: Api Request And V8 Engine
+
+###### 40: Promise in JS
