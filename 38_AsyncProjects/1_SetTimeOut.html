@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <h1 id="heading">Async Programming</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const sayAkshay = () => {
+      console.log("Akshay");
+    };
+
+    const changeText = () => {
+      //   document.getElementById("heading").innerHTML = "Best JS series";
+      document.querySelector("h1").innerHTML = "Best JS series";
+    };
+
+    const changeMe = setTimeout(changeText, 2000); // Give just reference. Do not execute."sayAkshay()" --> It will get execute immediately, won't wait for 2 sec
+
+    document.querySelector("#stop").addEventListener("click", () => {
+      clearTimeout(changeMe);
+      console.log("Stopped");
+    });
+  </script>
+</html>

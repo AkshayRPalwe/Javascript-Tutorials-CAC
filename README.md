@@ -63,3 +63,7 @@
 ###### 36: Events
 
 ###### 37: Async Fundamentals
+
+###### 38: Two Projects with Async JS
+
+###### 39: Api Request And V8 Engine
